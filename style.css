@@ -1,0 +1,241 @@
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --background-color: #000;
+    --secondary-background-color: #fafafa;
+    --text-color: #fafafa;
+    --secondary-text-color: #000;
+}
+
+/* Light Mode */
+.light-mode {
+    --background-color: #fafafa;
+    --secondary-background-color: #000;
+    --text-color: #000;
+    --secondary-text-color: #fafafa;
+}
+
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: all .3s ease-in-out;
+}
+
+/* Typography */
+div a, nav a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1 {
+    font-size: 3.5rem;
+    text-align: center;
+    padding-top: 2.9em;
+    margin: 40px 0 25px 0;
+}
+
+div a span {
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+div a p {
+    font-weight: 400;
+    font-size: .8rem;
+}
+
+.adblocker-link {
+    color: var(--secondary-text-color);
+}
+
+.adblocker-link:hover {
+    opacity: .7;
+}
+
+/* Layout */
+.front-page {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+}
+
+.background-video {
+    position: absolute;
+    z-index: -1;
+    object-fit: cover;
+}
+
+.title, .subtitle {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.second-page {
+    background-color: var(--secondary-background-color);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 4em 5em;
+}
+
+.second-page h2, .second-page p {
+    margin: 0;
+    color: var(--secondary-text-color);
+}
+
+.swiper-button-next, .swiper-button-prev {
+    color: var(--secondary-background-color) !important;
+    transform: translateY(-1.5em);
+    margin: 0 1em;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+    font-size: 30px !important;
+}
+
+.swiper-pagination-bullet {
+    background-color: var(--secondary-background-color) !important;
+}
+
+.container {
+    margin: 1em 0 4em 0;
+}
+
+div a {
+    background-color: var(--secondary-background-color);
+    color: var(--secondary-text-color);
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    transition: .2s ease;
+    text-align: center;
+    height: 84%;
+}
+
+div span {
+    display: block;
+    margin: 15px 0;
+}
+
+div a, div p, div span {
+    transition: all .5s ease-in-out;
+}
+
+div p {
+    border-radius: 8px;
+    margin-top: 0;
+    width: auto;
+    display: inline-block;
+    padding: 0 1em;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+section a:hover {
+    transform: scale(1.08);
+    z-index: 3;
+    box-shadow: 0 0 4px black;
+}
+
+section img {
+    width: 100%;
+    display: block;
+    border-top-left-radius: .7em;
+    border-top-right-radius: .7em;
+}
+
+.container-disclaimer {
+    padding: 4em 5em;
+    background-color: var(--secondary-background-color);
+    color: var(--secondary-text-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-top: 25vh;
+}
+
+.container-disclaimer p, .container-disclaimer h3 {
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 0 1em;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-size: .8rem;
+    font-style: italic;
+}
+
+/* Navigation */
+header {
+    color: var(--text-color);
+    top: 0;
+    z-index: 1000;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5), transparent);
+    transition: all .2s ease-in-out;
+}
+
+nav ul {
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+}
+
+nav li {
+    list-style: none;
+    padding: 0;
+}
+
+nav a {
+    padding: 0.7em;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+
+nav a:hover {
+    opacity: 0.65;
+}
+
+.light-mode-button {
+    padding-right: 20px;
+}
+
+/* Scroll Down Animation */
+.scroll-down header {
+    transform: translate3d(0, -100%, 0);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    nav a {
+        font-size: .9rem;
+    }
+}
+
+/* Navbar Light Mode */
+.navbar-light-mode header {
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.282);
+    background-image: none;
+}
