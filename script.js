@@ -12,16 +12,32 @@ const swiper = new Swiper('.swiper', {
         prevEl: '.swiper-button-prev',
     },
     breakpoints: {
-        500: {
-            slidesPerView: 1.4,
+        0: {
+            slidesPerView: 1.75,
             spaceBetween: 10,
         },
-        700: {
+        321: {
+            slidesPerView: 1.58,
+            spaceBetween: 10,
+        },
+        376: {
+            slidesPerView: 1.49,
+            spaceBetween: 10,
+        },
+        426: {
             slidesPerView: 2.42,
+            spaceBetween: 10,
+        },
+        769: {
+            slidesPerView: 3.47,
             spaceBetween: 15,
         },
-        1024: {
-            slidesPerView: 4.4,
+        1025: {
+            slidesPerView: 4.45,
+            spaceBetween: 20,
+        },
+        4000: {
+            slidesPerView: 4.45,
             spaceBetween: 20,
         }
     }
@@ -47,7 +63,6 @@ const video = document.querySelector('video');
 let lightmode = localStorage.getItem('light-mode');
 
 const enableLightMode = function(){
-    video.setAttribute('src', 'videos/lightmode1.mp4');
     document.body.classList.add('light-mode');
     document.body.classList.add('navbar-light-mode');
     document.querySelector('i').className = 'fa-solid fa-sun';
@@ -55,7 +70,6 @@ const enableLightMode = function(){
 }
 
 const disableLightMode = function(){
-    video.setAttribute('src', 'videos/darkmode.mp4');
     document.body.classList.remove('light-mode');
     document.body.classList.remove('navbar-light-mode');
     document.querySelector('i').className = 'fa-solid fa-moon';

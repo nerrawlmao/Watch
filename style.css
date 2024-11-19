@@ -85,7 +85,7 @@ div a p {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    padding: 4em 5em;
+    padding: 4em 10%;
 }
 
 .second-page h2, .second-page p {
@@ -156,7 +156,7 @@ section img {
 }
 
 .container-disclaimer {
-    padding: 4em 5em;
+    padding: 4em 10%;
     background-color: var(--secondary-background-color);
     color: var(--secondary-text-color);
     display: flex;
@@ -178,7 +178,7 @@ footer {
     padding: 0 1em;
     background-color: var(--background-color);
     color: var(--text-color);
-    font-size: .8rem;
+    font-size: .65rem;
     font-style: italic;
 }
 
@@ -226,16 +226,97 @@ nav a:hover {
     transform: translate3d(0, -100%, 0);
 }
 
-/* Responsive Design */
-@media (max-width: 600px) {
-    nav a {
-        font-size: .9rem;
-    }
-}
 
 /* Navbar Light Mode */
 .navbar-light-mode header {
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.282);
     background-image: none;
+}
+
+
+@media (min-width: 320px){
+    h1 {
+        font-size: 2.5rem;
+    }
+    div span {
+        font-size: 1.3rem !important;
+    }
+    div p{
+        font-size: .5rem !important;
+    }
+    nav a {
+        font-size: .6rem ;
+    }
+    .content{
+        font-size: .9rem;
+    }
+    .subtitle {
+        font-size: .8rem;
+    }
+}
+
+@media (min-width: 375px){
+    h1 {
+        font-size: 2.7rem;
+    }
+    div span {
+        font-size: 1.7rem !important;
+    }
+    div p{
+        font-size: .65rem !important;
+    }
+    nav a {
+        font-size: .8rem ;
+    }
+    .content{
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 425px){
+    h1 {
+        font-size: 2.9rem;
+    }
+    div span {
+        font-size: 1.9rem !important;
+    }
+    div p{
+        font-size: .80rem !important;
+    }
+    nav a {
+        font-size: .9rem ;
+    }
+    .subtitle {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 768px){
+    h1 {
+        font-size: 3.2em;
+    }
+    div span {
+        font-size: 2.1rem !important;
+    }
+    div p{
+        font-size: .8rem !important;
+    }
+    nav a {
+        font-size: 1.05rem ;
+    }
+}
+@media (min-width: 1024px){
+    h1 {
+        font-size: 3.5em;
+    }
+    div span {
+        font-size: 2.1rem !important;
+    }
+    div p{
+        font-size: .8rem !important;
+    }
+    nav a {
+        font-size: 1.1rem ;
+    }
 }
