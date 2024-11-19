@@ -175,6 +175,10 @@ section img {
     padding: 0;
 }
 
+h3,h2 {
+    padding-bottom: 4px;
+}
+
 footer {
     display: flex;
     align-items: center;
