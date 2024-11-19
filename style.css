@@ -189,6 +189,9 @@ footer {
     font-size: .65rem;
     font-style: italic;
 }
+footer p {
+    padding-right: 3px;
+}
 
 /* Navigation */
 header {
