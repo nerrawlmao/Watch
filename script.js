@@ -65,14 +65,14 @@ let lightmode = localStorage.getItem('light-mode');
 const enableLightMode = function(){
     document.body.classList.add('light-mode');
     document.body.classList.add('navbar-light-mode');
-    document.querySelector('i').className = 'fa-solid fa-sun';
+    document.querySelector('i').className = 'fa-solid fa-moon';
     localStorage.setItem('light-mode', 'active');
 }
 
 const disableLightMode = function(){
     document.body.classList.remove('light-mode');
     document.body.classList.remove('navbar-light-mode');
-    document.querySelector('i').className = 'fa-solid fa-moon';
+    document.querySelector('i').className = 'fa-solid fa-sun';
     localStorage.setItem('light-mode', null);
 }
 
