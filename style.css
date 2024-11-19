@@ -79,6 +79,10 @@ div a p {
     text-align: center;
 }
 
+.title {
+    margin: -32px 0 5px 0;
+}
+
 .second-page {
     background-color: var(--secondary-background-color);
     display: flex;
@@ -249,7 +253,7 @@ nav a:hover {
         font-size: .6rem ;
     }
     .content{
-        font-size: .9rem;
+        font-size: .8rem;
     }
     .subtitle {
         font-size: .8rem;
@@ -270,7 +274,7 @@ nav a:hover {
         font-size: .8rem ;
     }
     .content{
-        font-size: 1rem;
+        font-size: .9rem;
     }
 }
 
